@@ -11,6 +11,8 @@
   ## Getting started
   ```
   git clone
+  npm install
   mvn compile
   spring run app.groovy (to start spring web application)
+  open "http://localhost:8090"
 ```
