@@ -1,0 +1,57 @@
+{
+  	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  	"project": {
+	    "name": "AutoRest"
+	  },
+	  
+	"apps" : [{
+       "root": "src/main/frontend/src",
+        "outDir": "public",
+       	"assets": [
+         	"src/main/frontend/assets"
+       	],
+      	"index": "index.html",
+      	"main": "main.ts",
+      	"polyfills": "polyfills.ts",
+      	"test": "test.ts",
+      	"tsconfig": "tsconfig.app.json",
+      	"testTsconfig": "tsconfig.spec.json",
+     	"prefix": "app",
+      	"styles": [
+        	"styles.css"
+      	],
+      	"scripts": [],
+      	"environmentSource": "environments/environment.ts",
+      	"environments": {
+        	"dev": "environments/environment.ts",
+        	"prod": "environments/environment.prod.ts"
+     	}
+     }],
+     
+	  "e2e": {
+		    "protractor": {
+		      "config": "./protractor.conf.js"
+		    }
+	  },
+	  
+	  "lint": [
+	    {
+	      "project": "src/main/frontend/tsconfig.json",
+	      "exclude": "**/node_modules/**"
+	    },
+	    {
+	      "project": "/main/frontend/e2e/tsconfig.e2e.json",
+	      "exclude": "**/node_modules/**"
+	    }
+	  ],
+	  
+	  "test": {
+	    "karma": {
+	      "config": "./karma.conf.js"
+	    }
+	  },
+	  "defaults": {
+	    "styleExt": "css",
+	    "component": {}
+	  }
+  }
